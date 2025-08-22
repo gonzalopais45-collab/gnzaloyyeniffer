@@ -113,6 +113,18 @@
     font-size: 18px;
     color: #f48fb1;
   }
+
+  /* BOTON DE MUSICA */
+  .btn-musica {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color:#ff9ccf;
+    color:white;
+    border:none;
+    cursor:pointer;
+  }
 </style>
 </head>
 <body>
@@ -136,6 +148,7 @@
 </div>
 
 <h1>Gonzalo & Yeniffer</h1>
+
 <p class="dedicatoria">
 Mi <span>amor eterno</span> ❤️,<br>
 Cada día contigo es un <span>regalo</span>, cada risa tuya una <span>luz</span> en mi vida. 
@@ -144,10 +157,14 @@ Te prometo caminar a tu lado en cada paso, abrazarte en cada tormenta, y celebra
 Te amo más allá de las palabras, pero espero que estas líneas te <span>abracen</span> aunque sea un poquito, como yo lo haría ahora mismo. 💕
 </p>
 
-<audio autoplay loop>
+<!-- Audio con boton -->
+<audio id="musica" loop>
   <source src="Cancion.mp3" type="audio/mpeg">
   Tu navegador no soporta audio.
 </audio>
+<button class="btn-musica" onclick="document.getElementById('musica').play()">
+  Escuchar música 🎵
+</button>
 
 <footer id="tiempo-juntos">
   Hace X años, X meses y X días que estamos juntos.
